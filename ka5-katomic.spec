@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/48x48/apps/katomic.png
 %{_iconsdir}/hicolor/64x64/apps/katomic.png
 %{_datadir}/katomic
-%{_datadir}/kconf_update/katomic-levelset-upd.pl
+%attr(755,root,root) %{_datadir}/kconf_update/katomic-levelset-upd.pl
 %{_datadir}/kconf_update/katomic-levelset.upd
 %{_datadir}/kxmlgui5/katomic
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
