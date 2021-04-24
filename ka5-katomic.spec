@@ -1,15 +1,15 @@
-%define		kdeappsver	20.12.3
+%define		kdeappsver	21.04.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		katomic
 Summary:	katomic
 Name:		ka5-%{kaname}
-Version:	20.12.3
+Version:	21.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	521f6ba174a0a04a007939075ef6459a
+# Source0-md5:	0cb5c27b42ec678f4a7ec71d1d0ec827
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -78,7 +78,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/katomic
 %attr(755,root,root) %{_datadir}/kconf_update/katomic-levelset-upd.pl
 %{_datadir}/kconf_update/katomic-levelset.upd
-%{_datadir}/kxmlgui5/katomic
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
 %{_datadir}/knsrcfiles/katomic.knsrc
 %{_datadir}/qlogging-categories5/katomic.categories
