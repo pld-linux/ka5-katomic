@@ -42,6 +42,11 @@ KAtomic is a fun educational game built around molecular geometry. It
 employs simplistic two-dimensional looks at different chemical
 elements.
 
+%description -l pl.UTF-8
+KAtomic jest edukacyjną grą zbudowaną wokół geometrii cząsteczek
+chemicznych. Pokazuje uproszczony dwuwymiarowy obraz różnych
+chemicznych pierwiastków i związków.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
@@ -63,7 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
