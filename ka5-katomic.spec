@@ -1,39 +1,39 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	23.08.4
+%define		kdeappsver	24.01.95
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		katomic
 Summary:	katomic
 Name:		ka5-%{kaname}
-Version:	23.08.4
-Release:	1
+Version:	24.01.95
+Release:	0.1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
-Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2bb83cbec3ff9ba7fd62e71c92a1c800
+Source0:	https://download.kde.org/unstable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	58cb07fda7096260e3259e2b7207b827
 URL:		http://www.kde.org/
-BuildRequires:	Qt5Core-devel >= %{qtver}
-BuildRequires:	Qt5Gui-devel >= 5.11.1
-BuildRequires:	Qt5Qml-devel >= 5.11.1
-BuildRequires:	Qt5Quick-devel >= 5.11.1
-BuildRequires:	Qt5Widgets-devel
+BuildRequires:	Qt6Core-devel >= %{qtver}
+BuildRequires:	Qt6Gui-devel >= 5.11.1
+BuildRequires:	Qt6Qml-devel >= 5.11.1
+BuildRequires:	Qt6Quick-devel >= 5.11.1
+BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-devel
 BuildRequires:	ka5-libkdegames-devel >= %{kdeappsver}
-BuildRequires:	kf5-extra-cmake-modules >= %{kframever}
-BuildRequires:	kf5-kconfig-devel >= %{kframever}
-BuildRequires:	kf5-kcoreaddons-devel >= %{kframever}
-BuildRequires:	kf5-kcrash-devel >= %{kframever}
-BuildRequires:	kf5-kdbusaddons-devel >= %{kframever}
-BuildRequires:	kf5-kdoctools-devel >= %{kframever}
-BuildRequires:	kf5-ki18n-devel >= %{kframever}
-BuildRequires:	kf5-knewstuff-devel >= %{kframever}
-BuildRequires:	kf5-kwidgetsaddons-devel >= %{kframever}
-BuildRequires:	kf5-kxmlgui-devel >= %{kframever}
+BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
+BuildRequires:	kf6-kconfig-devel >= %{kframever}
+BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
+BuildRequires:	kf6-kcrash-devel >= %{kframever}
+BuildRequires:	kf6-kdbusaddons-devel >= %{kframever}
+BuildRequires:	kf6-kdoctools-devel >= %{kframever}
+BuildRequires:	kf6-ki18n-devel >= %{kframever}
+BuildRequires:	kf6-knewstuff-devel >= %{kframever}
+BuildRequires:	kf6-kwidgetsaddons-devel >= %{kframever}
+BuildRequires:	kf6-kxmlgui-devel >= %{kframever}
 BuildRequires:	ninja
-BuildRequires:	qt5-build >= %{qtver}
+BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
@@ -91,4 +91,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kconf_update/katomic-levelset.upd
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
 %{_datadir}/knsrcfiles/katomic.knsrc
-%{_datadir}/qlogging-categories5/katomic.categories
+%{_datadir}/qlogging-categories6/katomic.categories
